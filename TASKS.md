@@ -1,0 +1,68 @@
+# Tasks
+
+This file tracks all work for the E-Commerce Analytics dashboard.
+
+## Definition of Done
+
+- Acceptance criteria for the milestone are met
+- App runs locally with `streamlit run app.py`
+- Changes committed with the milestone ID in the commit message
+
+## To Do
+
+### TASK-1: Environment setup and project initialization
+Set up the Python project structure and dependencies for the Streamlit app.
+- [ ] `requirements.txt` includes Streamlit, Plotly, and Pandas
+- [ ] Project folder structure created (e.g. `app.py`, `data/`)
+- [ ] `streamlit run app.py` launches a blank/placeholder app without errors
+
+Commit:
+
+### TASK-2: Data loading and basic structure
+Load `data/sales-data.csv` into a Pandas DataFrame and validate its structure.
+- [ ] CSV loads with correct column types (date, numeric, categorical)
+- [ ] Loaded row count matches the 482 transaction records
+- [ ] Basic error handling for missing/malformed file
+
+Commit:
+
+### TASK-3: KPI cards implementation
+Display Total Sales and Total Orders as KPI cards (FR-1).
+- [ ] Total Sales shown formatted as currency (~$116,500 expected)
+- [ ] Total Orders shown as a formatted count (482 expected)
+
+Commit:
+
+### TASK-4: Sales trend chart
+Add a line chart showing sales over time (FR-2).
+- [ ] Line chart plots sales by date with time on the X-axis
+- [ ] Interactive tooltips show exact values on hover
+
+Commit:
+
+### TASK-5: Category and region breakdowns
+Add bar charts for sales by category and by region, sorted by value (FR-3, FR-4).
+- [ ] Category bar chart shows all 5 categories sorted highest to lowest
+- [ ] Region bar chart shows all 4 regions sorted highest to lowest
+- [ ] Both charts have interactive tooltips with exact values
+
+Commit:
+
+### TASK-6: Testing and refinement
+Verify the dashboard against the PRD's acceptance criteria and polish appearance.
+- [ ] All values match expected calculations from the CSV
+- [ ] Dashboard runs with no errors or warnings and loads within 5 seconds
+- [ ] Layout and labels are clear and presentation-ready
+
+Commit:
+
+### TASK-7: Deployment to Streamlit Community Cloud
+Deploy the dashboard to a publicly accessible URL (NFR-5).
+- [ ] App deployed to Streamlit Community Cloud
+- [ ] Public URL verified to load and render correctly
+
+Commit:
+
+## In Progress
+
+## Done
