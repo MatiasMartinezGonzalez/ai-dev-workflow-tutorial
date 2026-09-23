@@ -45,6 +45,7 @@ Add bar charts for sales by category and by region, sorted by value (FR-3, FR-4)
 - [ ] Category bar chart shows all 5 categories sorted highest to lowest
 - [ ] Region bar chart shows all 4 regions sorted highest to lowest
 - [ ] Both charts have interactive tooltips with exact values
+- [ ] **Extra feature, personal brainstorming (beyond PRD scope):** Top 5 Products table by total revenue, with units sold
 
 Commit:
 
