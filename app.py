@@ -1,8 +1,15 @@
 import pandas as pd
 import streamlit as st
 
-from calculations import total_sales, total_orders, sales_by_month
-from charts import trend_chart
+from calculations import (
+    total_sales,
+    total_orders,
+    sales_by_month,
+    sales_by_category,
+    sales_by_region,
+    top_products,
+)
+from charts import trend_chart, category_chart, region_chart
 
 DATA_PATH = "data/sales-data.csv"
 EXPECTED_COLUMNS = {
@@ -43,6 +50,14 @@ def main():
     col2.metric("Total Orders", f"{total_orders(data):,}")
 
     st.plotly_chart(trend_chart(sales_by_month(data)), use_container_width=True)
+
+    col3, col4 = st.columns(2)
+    col3.plotly_chart(category_chart(sales_by_category(data)), use_container_width=True)
+    col4.plotly_chart(region_chart(sales_by_region(data)), use_container_width=True)
+
+    st.subheader("Top 5 Products")
+    st.caption("Extra feature, personal brainstorming — beyond the PRD's Phase 1 scope.")
+    st.dataframe(top_products(data), use_container_width=True)
 
 
 if __name__ == "__main__":
