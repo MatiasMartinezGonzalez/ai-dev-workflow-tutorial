@@ -10,13 +10,6 @@ This file tracks all work for the E-Commerce Analytics dashboard.
 
 ## To Do
 
-### TASK-3: KPI cards implementation
-Display Total Sales and Total Orders as KPI cards (FR-1).
-- [ ] Total Sales shown formatted as currency (~$116,500 expected)
-- [ ] Total Orders shown as a formatted count (482 expected)
-
-Commit:
-
 ### TASK-4: Sales trend chart
 Add a line chart showing sales over time (FR-2).
 - [ ] Line chart plots sales by date with time on the X-axis
@@ -49,6 +42,13 @@ Deploy the dashboard to a publicly accessible URL (NFR-5).
 Commit:
 
 ## In Progress
+
+### TASK-3: KPI cards implementation
+Display Total Sales and Total Orders as KPI cards (FR-1).
+- [ ] Total Sales shown formatted as currency (~$116,500 expected)
+- [ ] Total Orders shown as a formatted count (482 expected)
+
+Commit:
 
 ## Done
 
