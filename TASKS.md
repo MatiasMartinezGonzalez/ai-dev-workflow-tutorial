@@ -10,13 +10,6 @@ This file tracks all work for the E-Commerce Analytics dashboard.
 
 ## To Do
 
-### TASK-4: Sales trend chart
-Add a line chart showing sales over time (FR-2).
-- [ ] Line chart plots sales by date with time on the X-axis
-- [ ] Interactive tooltips show exact values on hover
-
-Commit:
-
 ### TASK-5: Category and region breakdowns
 Add bar charts for sales by category and by region, sorted by value (FR-3, FR-4).
 - [ ] Category bar chart shows all 5 categories sorted highest to lowest
@@ -42,6 +35,13 @@ Deploy the dashboard to a publicly accessible URL (NFR-5).
 Commit:
 
 ## In Progress
+
+### TASK-4: Sales trend chart
+Add a line chart showing sales over time (FR-2).
+- [ ] Line chart plots sales by date with time on the X-axis
+- [ ] Interactive tooltips show exact values on hover
+
+Commit:
 
 ## Done
 
