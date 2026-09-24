@@ -59,7 +59,16 @@ def main():
 
     st.subheader("Top 5 Products")
     st.caption("Extra feature, personal brainstorming — beyond the PRD's Phase 1 scope.")
-    st.dataframe(top_products(data), use_container_width=True)
+    st.dataframe(
+        top_products(data),
+        use_container_width=True,
+        hide_index=True,
+        column_config={
+            "product": st.column_config.TextColumn("Product"),
+            "total_revenue": st.column_config.NumberColumn("Total Revenue", format="$%.2f"),
+            "units_sold": st.column_config.NumberColumn("Units Sold", format="%d"),
+        },
+    )
 
 
 if __name__ == "__main__":
