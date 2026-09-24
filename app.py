@@ -1,7 +1,8 @@
 import pandas as pd
 import streamlit as st
 
-from calculations import total_sales, total_orders
+from calculations import total_sales, total_orders, sales_by_month
+from charts import trend_chart
 
 DATA_PATH = "data/sales-data.csv"
 EXPECTED_COLUMNS = {
@@ -40,6 +41,8 @@ def main():
     col1, col2 = st.columns(2)
     col1.metric("Total Sales", f"${total_sales(data):,.0f}")
     col2.metric("Total Orders", f"{total_orders(data):,}")
+
+    st.plotly_chart(trend_chart(sales_by_month(data)), use_container_width=True)
 
 
 if __name__ == "__main__":
