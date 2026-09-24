@@ -75,3 +75,33 @@ def test_sales_by_region_sorted_descending():
     assert list(result.index) == ["South", "North"]
     assert result["South"] == pytest.approx(105.0)
     assert result["North"] == pytest.approx(50.0)
+
+
+from calculations import top_products
+
+
+def test_top_products_returns_top_n_sorted_by_revenue():
+    df = pd.DataFrame({
+        "product": ["A", "A", "B", "C"],
+        "quantity": [1, 2, 5, 1],
+        "total_amount": [10.0, 10.0, 100.0, 5.0],
+    })
+
+    result = top_products(df, n=2)
+
+    assert list(result["product"]) == ["B", "A"]
+    b_row = result[result["product"] == "B"].iloc[0]
+    assert b_row["total_revenue"] == pytest.approx(100.0)
+    assert b_row["units_sold"] == 5
+
+
+def test_top_products_returns_all_when_fewer_than_n():
+    df = pd.DataFrame({
+        "product": ["A", "B"],
+        "quantity": [1, 2],
+        "total_amount": [10.0, 20.0],
+    })
+
+    result = top_products(df, n=5)
+
+    assert len(result) == 2
