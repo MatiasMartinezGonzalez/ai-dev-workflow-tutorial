@@ -27,16 +27,17 @@ Commit:
 
 ## In Progress
 
+## Done
+
 ### TASK-5: Category and region breakdowns
 Add bar charts for sales by category and by region, sorted by value (FR-3, FR-4).
-- [ ] Category bar chart shows all 5 categories sorted highest to lowest
-- [ ] Region bar chart shows all 4 regions sorted highest to lowest
-- [ ] Both charts have interactive tooltips with exact values
-- [ ] **Extra feature, personal brainstorming (beyond PRD scope):** Top 5 Products table by total revenue, with units sold
+- [x] Category bar chart shows all 5 categories sorted highest to lowest
+- [x] Region bar chart shows all 4 regions sorted highest to lowest
+- [x] Both charts have interactive tooltips with exact values
+- [x] **Extra feature, personal brainstorming (beyond PRD scope):** Top 5 Products table by total revenue, with units sold
 
-Commit:
-
-## Done
+Commit: 71659ca
+Notes: clean
 
 ### TASK-4: Sales trend chart
 Add a line chart showing sales over time (FR-2).
