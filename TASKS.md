@@ -50,15 +50,16 @@ Commit:
 
 ## In Progress
 
+## Done
+
 ### TASK-2: Data loading and basic structure
 Load `data/sales-data.csv` into a Pandas DataFrame and validate its structure.
-- [ ] CSV loads with correct column types (date, numeric, categorical)
-- [ ] Loaded row count matches the 482 transaction records
-- [ ] Basic error handling for missing/malformed file
+- [x] CSV loads with correct column types (date, numeric, categorical)
+- [x] Loaded row count matches the 482 transaction records
+- [x] Basic error handling for missing/malformed file
 
-Commit:
-
-## Done
+Commit: 9f4b48b
+Notes: clean
 
 ### TASK-1: Environment setup and project initialization
 Set up the Python project structure and dependencies for the Streamlit app.
