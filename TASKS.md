@@ -36,14 +36,15 @@ Commit:
 
 ## In Progress
 
+## Done
+
 ### TASK-4: Sales trend chart
 Add a line chart showing sales over time (FR-2).
-- [ ] Line chart plots sales by date with time on the X-axis
-- [ ] Interactive tooltips show exact values on hover
+- [x] Line chart plots sales by date with time on the X-axis
+- [x] Interactive tooltips show exact values on hover
 
-Commit:
-
-## Done
+Commit: 11db7bf
+Notes: clean
 
 ### TASK-3: KPI cards implementation
 Display Total Sales and Total Orders as KPI cards (FR-1).
