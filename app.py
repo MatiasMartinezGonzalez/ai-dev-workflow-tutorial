@@ -49,8 +49,10 @@ def main():
     col1.metric("Total Sales", f"${total_sales(data):,.0f}")
     col2.metric("Total Orders", f"{total_orders(data):,}")
 
+    st.divider()
     st.plotly_chart(trend_chart(sales_by_month(data)), use_container_width=True)
 
+    st.divider()
     col3, col4 = st.columns(2)
     col3.plotly_chart(category_chart(sales_by_category(data)), use_container_width=True)
     col4.plotly_chart(region_chart(sales_by_region(data)), use_container_width=True)
