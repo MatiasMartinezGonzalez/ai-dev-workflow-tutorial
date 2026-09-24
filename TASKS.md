@@ -10,16 +10,19 @@ This file tracks all work for the E-Commerce Analytics dashboard.
 
 ## To Do
 
-### TASK-7: Deployment to Streamlit Community Cloud
-Deploy the dashboard to a publicly accessible URL (NFR-5).
-- [ ] App deployed to Streamlit Community Cloud
-- [ ] Public URL verified to load and render correctly
-
-Commit:
-
 ## In Progress
 
 ## Done
+
+### TASK-7: Deployment to Streamlit Community Cloud
+Deploy the dashboard to a publicly accessible URL (NFR-5).
+- [x] App deployed to Streamlit Community Cloud
+- [x] Public URL verified to load and render correctly
+
+Live URL: https://sales-dashboard-martinez.streamlit.app/
+
+Commit: 4dd1f36
+Notes: clean
 
 ### TASK-6: Testing and refinement
 Verify the dashboard against the PRD's acceptance criteria and polish appearance.
