@@ -33,3 +33,25 @@ def test_load_data_raises_value_error_for_missing_columns(tmp_path):
 
     with pytest.raises(ValueError, match="region"):
         load_data(str(csv_path))
+
+
+def test_load_data_raises_value_error_for_non_numeric_total_amount(tmp_path):
+    csv_path = tmp_path / "sales.csv"
+    csv_path.write_text(
+        "date,order_id,product,category,region,quantity,unit_price,total_amount\n"
+        "2024-01-03,ORD-1,Widget,Electronics,North,2,10.0,oops\n"
+    )
+
+    with pytest.raises(ValueError, match="total_amount"):
+        load_data(str(csv_path))
+
+
+def test_load_data_raises_value_error_for_invalid_date(tmp_path):
+    csv_path = tmp_path / "sales.csv"
+    csv_path.write_text(
+        "date,order_id,product,category,region,quantity,unit_price,total_amount\n"
+        "not-a-date,ORD-1,Widget,Electronics,North,2,10.0,20.0\n"
+    )
+
+    with pytest.raises(ValueError, match="date"):
+        load_data(str(csv_path))

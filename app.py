@@ -29,6 +29,10 @@ def load_data(path: str) -> pd.DataFrame:
     missing = EXPECTED_COLUMNS - set(df.columns)
     if missing:
         raise ValueError(f"CSV is missing expected columns: {sorted(missing)}")
+    if not pd.api.types.is_datetime64_any_dtype(df["date"]):
+        raise ValueError("CSV contains invalid values in the 'date' column")
+    if not pd.api.types.is_numeric_dtype(df["total_amount"]):
+        raise ValueError("CSV contains non-numeric values in the 'total_amount' column")
     return df
 
 
