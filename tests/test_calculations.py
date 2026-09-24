@@ -35,3 +35,43 @@ def test_sales_by_month_groups_and_sums_by_calendar_month():
 
     assert result[pd.Period("2024-01", freq="M")] == pytest.approx(150.0)
     assert result[pd.Period("2024-02", freq="M")] == pytest.approx(200.0)
+
+
+from calculations import sales_by_category, sales_by_region
+
+
+def test_sales_by_category_sorted_descending():
+    df = pd.DataFrame({
+        "category": ["Electronics", "Audio", "Electronics", "Audio"],
+        "total_amount": [100.0, 300.0, 50.0, 20.0],
+    })
+
+    result = sales_by_category(df)
+
+    assert list(result.index) == ["Audio", "Electronics"]
+    assert result["Audio"] == pytest.approx(320.0)
+    assert result["Electronics"] == pytest.approx(150.0)
+
+
+def test_sales_by_category_includes_every_distinct_category():
+    df = pd.DataFrame({
+        "category": ["Electronics", "Audio", "Wearables"],
+        "total_amount": [100.0, 50.0, 10.0],
+    })
+
+    result = sales_by_category(df)
+
+    assert set(result.index) == {"Electronics", "Audio", "Wearables"}
+
+
+def test_sales_by_region_sorted_descending():
+    df = pd.DataFrame({
+        "region": ["North", "South", "North", "South"],
+        "total_amount": [40.0, 100.0, 10.0, 5.0],
+    })
+
+    result = sales_by_region(df)
+
+    assert list(result.index) == ["South", "North"]
+    assert result["South"] == pytest.approx(105.0)
+    assert result["North"] == pytest.approx(50.0)
