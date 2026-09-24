@@ -10,14 +10,6 @@ This file tracks all work for the E-Commerce Analytics dashboard.
 
 ## To Do
 
-### TASK-6: Testing and refinement
-Verify the dashboard against the PRD's acceptance criteria and polish appearance.
-- [ ] All values match expected calculations from the CSV
-- [ ] Dashboard runs with no errors or warnings and loads within 5 seconds
-- [ ] Layout and labels are clear and presentation-ready
-
-Commit:
-
 ### TASK-7: Deployment to Streamlit Community Cloud
 Deploy the dashboard to a publicly accessible URL (NFR-5).
 - [ ] App deployed to Streamlit Community Cloud
@@ -26,6 +18,14 @@ Deploy the dashboard to a publicly accessible URL (NFR-5).
 Commit:
 
 ## In Progress
+
+### TASK-6: Testing and refinement
+Verify the dashboard against the PRD's acceptance criteria and polish appearance.
+- [ ] All values match expected calculations from the CSV
+- [ ] Dashboard runs with no errors or warnings and loads within 5 seconds
+- [ ] Layout and labels are clear and presentation-ready
+
+Commit:
 
 ## Done
 
