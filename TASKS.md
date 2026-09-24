@@ -10,14 +10,6 @@ This file tracks all work for the E-Commerce Analytics dashboard.
 
 ## To Do
 
-### TASK-1: Environment setup and project initialization
-Set up the Python project structure and dependencies for the Streamlit app.
-- [ ] `requirements.txt` includes Streamlit, Plotly, and Pandas
-- [ ] Project folder structure created (e.g. `app.py`, `data/`)
-- [ ] `streamlit run app.py` launches a blank/placeholder app without errors
-
-Commit:
-
 ### TASK-2: Data loading and basic structure
 Load `data/sales-data.csv` into a Pandas DataFrame and validate its structure.
 - [ ] CSV loads with correct column types (date, numeric, categorical)
@@ -67,3 +59,12 @@ Commit:
 ## In Progress
 
 ## Done
+
+### TASK-1: Environment setup and project initialization
+Set up the Python project structure and dependencies for the Streamlit app.
+- [x] `requirements.txt` includes Streamlit, Plotly, and Pandas
+- [x] Project folder structure created (e.g. `app.py`, `data/`)
+- [x] `streamlit run app.py` launches a blank/placeholder app without errors
+
+Commit: 8d425c7
+Notes: clean
