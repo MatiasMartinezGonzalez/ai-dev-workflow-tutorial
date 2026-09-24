@@ -19,15 +19,16 @@ Commit:
 
 ## In Progress
 
+## Done
+
 ### TASK-6: Testing and refinement
 Verify the dashboard against the PRD's acceptance criteria and polish appearance.
-- [ ] All values match expected calculations from the CSV
-- [ ] Dashboard runs with no errors or warnings and loads within 5 seconds
-- [ ] Layout and labels are clear and presentation-ready
+- [x] All values match expected calculations from the CSV
+- [x] Dashboard runs with no errors or warnings and loads within 5 seconds
+- [x] Layout and labels are clear and presentation-ready
 
-Commit:
-
-## Done
+Commit: 91f7c2f
+Notes: clean
 
 ### TASK-5: Category and region breakdowns
 Add bar charts for sales by category and by region, sorted by value (FR-3, FR-4).
