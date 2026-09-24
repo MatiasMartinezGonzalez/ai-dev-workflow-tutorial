@@ -43,14 +43,15 @@ Commit:
 
 ## In Progress
 
+## Done
+
 ### TASK-3: KPI cards implementation
 Display Total Sales and Total Orders as KPI cards (FR-1).
-- [ ] Total Sales shown formatted as currency (~$116,500 expected)
-- [ ] Total Orders shown as a formatted count (482 expected)
+- [x] Total Sales shown formatted as currency (~$116,500 expected)
+- [x] Total Orders shown as a formatted count (482 expected)
 
-Commit:
-
-## Done
+Commit: 714dbff
+Notes: clean
 
 ### TASK-2: Data loading and basic structure
 Load `data/sales-data.csv` into a Pandas DataFrame and validate its structure.
