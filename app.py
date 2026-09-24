@@ -1,6 +1,8 @@
 import pandas as pd
 import streamlit as st
 
+from calculations import total_sales, total_orders
+
 DATA_PATH = "data/sales-data.csv"
 EXPECTED_COLUMNS = {
     "date",
@@ -35,7 +37,9 @@ def main():
         st.error(str(e))
         st.stop()
 
-    st.write(f"Loaded {len(data)} transactions.")
+    col1, col2 = st.columns(2)
+    col1.metric("Total Sales", f"${total_sales(data):,.0f}")
+    col2.metric("Total Orders", f"{total_orders(data):,}")
 
 
 if __name__ == "__main__":
