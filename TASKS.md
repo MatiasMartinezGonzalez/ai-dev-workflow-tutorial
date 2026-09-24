@@ -10,14 +10,6 @@ This file tracks all work for the E-Commerce Analytics dashboard.
 
 ## To Do
 
-### TASK-2: Data loading and basic structure
-Load `data/sales-data.csv` into a Pandas DataFrame and validate its structure.
-- [ ] CSV loads with correct column types (date, numeric, categorical)
-- [ ] Loaded row count matches the 482 transaction records
-- [ ] Basic error handling for missing/malformed file
-
-Commit:
-
 ### TASK-3: KPI cards implementation
 Display Total Sales and Total Orders as KPI cards (FR-1).
 - [ ] Total Sales shown formatted as currency (~$116,500 expected)
@@ -57,6 +49,14 @@ Deploy the dashboard to a publicly accessible URL (NFR-5).
 Commit:
 
 ## In Progress
+
+### TASK-2: Data loading and basic structure
+Load `data/sales-data.csv` into a Pandas DataFrame and validate its structure.
+- [ ] CSV loads with correct column types (date, numeric, categorical)
+- [ ] Loaded row count matches the 482 transaction records
+- [ ] Basic error handling for missing/malformed file
+
+Commit:
 
 ## Done
 
